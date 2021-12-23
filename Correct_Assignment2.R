@@ -261,7 +261,7 @@ install.packages("neuralnet")
 library(neuralnet)
 set.seed(12345)
 
-nuer <- sample(2, nrow(HeartFailure_dataset), replace = TRUE, prob = c(0.7, 0.7))
+nuer <- sample(2, nrow(HeartFailure_dataset), replace = TRUE, prob = c(0.7, 0.3))
 train.data <- HeartFailure_dataset[nuer == 1, ]
 test.data <- HeartFailure_dataset[nuer == 2, ]
 
